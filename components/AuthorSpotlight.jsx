@@ -1,12 +1,7 @@
 import React from 'react';
 import { Award, Book } from 'lucide-react';
-import { Author } from '../types';
 
-interface AuthorSpotlightProps {
-  author: Author;
-}
-
-const AuthorSpotlight: React.FC<AuthorSpotlightProps> = ({ author }) => {
+const AuthorSpotlight = ({ author }) => {
   return (
     <div className="author-spotlight-card bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden mb-6">
       <div className="bg-gradient-to-r from-slate-900 to-slate-800 px-4 py-3 flex items-center justify-between">
