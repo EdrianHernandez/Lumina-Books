@@ -1,21 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Search, X, BookOpen } from 'lucide-react';
-import { Book } from '../types';
 
-interface BookSearchProps {
-  books: Book[];
-  onSearchSelect: (bookId: string) => void;
-}
-
-const BookSearch: React.FC<BookSearchProps> = ({ books, onSearchSelect }) => {
+const BookSearch = ({ books, onSearchSelect }) => {
   const [query, setQuery] = useState('');
-  const [suggestions, setSuggestions] = useState<Book[]>([]);
+  const [suggestions, setSuggestions] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
-  const wrapperRef = useRef<HTMLDivElement>(null);
+  const wrapperRef = useRef(null);
 
   useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (wrapperRef.current && !wrapperRef.current.contains(event.target as Node)) {
+    function handleClickOutside(event) {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
         setIsOpen(false);
       }
     }
@@ -39,7 +33,7 @@ const BookSearch: React.FC<BookSearchProps> = ({ books, onSearchSelect }) => {
     }
   }, [query, books]);
 
-  const handleSelect = (book: Book) => {
+  const handleSelect = (book) => {
     setQuery('');
     setIsOpen(false);
     onSearchSelect(book.id);
