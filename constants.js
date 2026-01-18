@@ -1,6 +1,4 @@
-import { Author, Book, Category } from './types';
-
-export const CATEGORIES: Category[] = [
+export const CATEGORIES = [
   {
     id: 'fiction',
     name: 'Fiction',
@@ -31,7 +29,7 @@ export const CATEGORIES: Category[] = [
   },
 ];
 
-export const FEATURED_AUTHOR: Author = {
+export const FEATURED_AUTHOR = {
   id: 'a1',
   name: 'Elena Vance',
   imageUrl: 'https://picsum.photos/200/200?random=100',
@@ -39,7 +37,7 @@ export const FEATURED_AUTHOR: Author = {
   notableWorks: ['The Starlight Echo', 'Void Walkers', 'Chronicles of Sol'],
 };
 
-export const MOCK_BOOKS: Book[] = [
+export const MOCK_BOOKS = [
   {
     id: '1',
     title: 'The Starlight Echo',
