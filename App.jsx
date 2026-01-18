@@ -6,8 +6,8 @@ import BookGrid from './components/BookGrid';
 import AuthorSpotlight from './components/AuthorSpotlight';
 import { MOCK_BOOKS, CATEGORIES, FEATURED_AUTHOR } from './constants';
 
-const App: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+const App = () => {
+  const [selectedCategory, setSelectedCategory] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [cartCount] = useState(2); // Simulated cart state
 
@@ -25,7 +25,7 @@ const App: React.FC = () => {
     });
   }, [selectedCategory]);
 
-  const handleSearchSelect = (bookId: string) => {
+  const handleSearchSelect = (bookId) => {
     console.log("Navigating to book:", bookId);
     // In a real app, this would use a router
     alert(`Navigating to book ID: ${bookId}`);
