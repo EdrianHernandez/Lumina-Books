@@ -1,26 +1,19 @@
 import React, { useState } from 'react';
 import { ChevronRight, ChevronDown, Filter } from 'lucide-react';
-import { Category } from '../types';
 
-interface CategoryFilterProps {
-  categories: Category[];
-  selectedCategory: string | null;
-  onSelectCategory: (categoryName: string | null) => void;
-}
-
-const CategoryFilter: React.FC<CategoryFilterProps> = ({ 
+const CategoryFilter = ({ 
   categories, 
   selectedCategory, 
   onSelectCategory 
 }) => {
-  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+  const [expanded, setExpanded] = useState({});
 
-  const toggleExpand = (id: string, e: React.MouseEvent) => {
+  const toggleExpand = (id, e) => {
     e.stopPropagation();
     setExpanded(prev => ({ ...prev, [id]: !prev[id] }));
   };
 
-  const isSelected = (name: string) => selectedCategory === name;
+  const isSelected = (name) => selectedCategory === name;
 
   return (
     <nav className="category-filter w-full">
