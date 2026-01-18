@@ -1,15 +1,9 @@
 import React from 'react';
 import { Star, ShoppingCart } from 'lucide-react';
-import { Book } from '../types';
 
-interface BookGridProps {
-  books: Book[];
-  title: string;
-}
-
-const BookGrid: React.FC<BookGridProps> = ({ books, title }) => {
+const BookGrid = ({ books, title }) => {
   
-  const renderStars = (rating: number) => {
+  const renderStars = (rating) => {
     return (
       <div className="flex items-center gap-0.5">
         {[...Array(5)].map((_, i) => (
