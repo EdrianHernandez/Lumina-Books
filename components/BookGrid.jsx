@@ -56,7 +56,7 @@ const BookGrid = ({ books, title }) => {
                 />
                 
                 {/* Overlay actions */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-end justify-center pb-4 opacity-0 group-hover:opacity-100">
+                <div className="absolute inset-0 bg-black/40 transition-colors duration-300 flex items-end justify-center pb-4 opacity-100">
                    <button className="bg-white text-slate-900 px-4 py-2 rounded-full font-medium text-sm shadow-lg hover:bg-brand-50 hover:text-brand-700 transform translate-y-2 group-hover:translate-y-0 transition-all flex items-center gap-2">
                       <ShoppingCart className="w-4 h-4" /> Add to Cart
                    </button>

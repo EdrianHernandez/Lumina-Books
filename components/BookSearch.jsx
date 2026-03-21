@@ -64,7 +64,7 @@ const BookSearch = ({ books, onSearchSelect }) => {
       </div>
 
       {isOpen && suggestions.length > 0 && (
-        <div className="absolute z-50 mt-1 w-full bg-white shadow-xl max-h-96 rounded-lg py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
+        <div className="absolute z-50 mt-1 w-1/2 bg-white shadow-xl max-h-96 rounded-lg py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm left-0">
           {suggestions.map((book) => (
             <div
               key={book.id}
