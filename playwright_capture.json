@@ -1,0 +1,26 @@
+[
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books.git",
+        "file_path": "components/BookGrid.jsx",
+        "image_anchor": "Lumina-Books_bug-1.png",
+        "text_anchors": [
+            "There's a dark overlay blocking the cover image of each book.",
+            "The book cover images have a dark semi-transparent layer permanently covering them, preventing the user from seeing the book artwork.",
+            "I cannot see the book covers because a dark layer is permanently blocking my view of all the product images."
+        ],
+        "positive_node": "<div className=\"absolute inset-0 bg-black/40 transition-colors duration-300 flex items-end justify-center pb-4 opacity-100\">",
+        "playwright_selector": "div.book-card:first-of-type div.absolute.inset-0.bg-black"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books.git",
+        "file_path": "components/BookSearch.jsx",
+        "image_anchor": "Lumina-Books_bug-2.png",
+        "text_anchors": [
+            "The search suggestions dropdown is cut off and only shows half the width.",
+            "The search suggestions dropdown is rendered at only half the expected width, with the right side of the content area truncated and inaccessible.",
+            "I cannot see or interact with the complete search suggestions because the dropdown is cut off on the right side."
+        ],
+        "positive_node": "<div className=\"absolute z-50 mt-1 w-1/2 bg-white shadow-xl max-h-96 rounded-lg py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm left-0\">",
+        "playwright_selector": "div.absolute.z-50.w-1\\/2.bg-white.shadow-xl"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books.git",
+        "image_anchor": "Lumina-Books_bug-1.png",
+        "file_path": "components/BookGrid.jsx",
+        "text_anchor": "There's a dark overlay blocking the cover image of each book.",
+        "positive_node": "<div className=\"absolute inset-0 bg-black/40 transition-colors duration-300 flex items-end justify-center pb-4 opacity-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books.git",
+        "image_anchor": "Lumina-Books_bug-2.png",
+        "file_path": "components/BookSearch.jsx",
+        "text_anchor": "The search suggestions dropdown is cut off and only shows half the width.",
+        "positive_node": "<div className=\"absolute z-50 mt-1 w-1/2 bg-white shadow-xl max-h-96 rounded-lg py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm left-0\">"
+    }
+]
