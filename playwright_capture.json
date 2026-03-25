@@ -21,7 +21,8 @@
             "I cannot see or interact with the complete search suggestions because the dropdown is cut off on the right side."
         ],
         "positive_node": "<div className=\"absolute z-50 mt-1 w-1/2 bg-white shadow-xl max-h-96 rounded-lg py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm left-0\">",
-        "playwright_selector": "div[class*='w-1/2'][class*='shadow-xl']",
-        "action_selector": "input"
+        "playwright_selector": "div[class*='absolute'][class*='shadow-xl']",
+        "action_selector": "input[type='text']",
+        "type_text": "the"
     }
 ]
