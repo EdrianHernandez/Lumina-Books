@@ -1,13 +1,13 @@
 [
     {
-        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books.git",
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books",
         "image_anchor": "Lumina-Books_bug-1.png",
         "file_path": "components/BookGrid.jsx",
         "text_anchor": "I cannot see the book covers because a dark layer is permanently blocking my view of all the product images.",
         "positive_node": "<div className=\"absolute inset-0 bg-black/40 transition-colors duration-300 flex items-end justify-center pb-4 opacity-100\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books.git",
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books",
         "image_anchor": "Lumina-Books_bug-2.png",
         "file_path": "components/BookSearch.jsx",
         "text_anchor": "I cannot see or interact with the complete search suggestions because the dropdown is cut off on the right side.",
