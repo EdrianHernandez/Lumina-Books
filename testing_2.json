@@ -3,14 +3,14 @@
         "github_repo": "https://github.com/EdrianHernandez/Lumina-Books",
         "image_anchor": "Lumina-Books_bug-1.png",
         "file_path": "components/BookGrid.jsx",
-        "text_anchor": "The book cover images have a dark semi-transparent layer permanently covering them, preventing the user from seeing the book artwork.",
+        "text_anchor": "The book cover images are partially obscured by a permanently active dark semi-transparent layer that spans across the entire cover area, preventing users from viewing the full book artwork and making the book grid display feel visually degraded compared to what a clean cover presentation would provide.",
         "positive_node": "<div className=\"absolute inset-0 bg-black/40 transition-colors duration-300 flex items-end justify-center pb-4 opacity-100\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Lumina-Books",
         "image_anchor": "Lumina-Books_bug-2.png",
         "file_path": "components/BookSearch.jsx",
-        "text_anchor": "The search suggestions dropdown is rendered at only half the expected width, with the right side of the content area truncated and inaccessible.",
+        "text_anchor": "The dropdown containing search suggestions is constrained to exactly half the width of the search input field, causing the rightmost portion of all search results to be hidden behind the visual boundary of the dropdown container, leaving users unable to see complete suggestion text.",
         "positive_node": "<div className=\"absolute z-50 mt-1 w-1/2 bg-white shadow-xl max-h-96 rounded-lg py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm left-0\">"
     }
 ]
